@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InnoGallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>InnoGallery</h1>
+    <div class="filters">
+      <button onclick="filterImages('all')">All</button>
+      <button onclick="filterImages('RadhaKrishna')">RadhaKrishna</button>
+      <button onclick="filterImages('Dogs')">Dogs</button>
+      <button onclick="filterImages('Moon')">Moon</button>
+      <button onclick="filterImages('Spider_Man')">Spider_Man</button>
+    </div>
+  </header>
+
+  <main class="gallery">
+    <div class="card RadhaKrishna"><img src="assets/img1.jpg" alt="" onclick="openLightbox(this)"></div>
+    <div class="card RadhaKrishna"><img src="assets/img2.jpg" alt="" onclick="openLightbox(this)"></div>
+    <div class="card Dogs"><img src="assets/img3.jpg" alt="" onclick="openLightbox(this)"></div>
+    <div class="card Dogs"><img src="assets/img4.jpg" alt="" onclick="openLightbox(this)"></div>
+    <div class="card Dogs"><img src="assets/img5.jpg" alt="" onclick="openLightbox(this)"></div>
+    <div class="card Moon"><img src="assets/img6.jpg" alt="" onclick="openLightbox(this)"></div>
+    <div class="card Spider_Man"><img src="assets/img7.jpg" alt="" onclick="openLightbox(this)"></div>
+    <div class="card Spider_Man"><img src="assets/img8.jpg" alt="" onclick="openLightbox(this)"></div>
+    <!-- Add more cards -->
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img" src="">
+    <div class="nav">
+      <button onclick="prevImage()">❮</button>
+      <button onclick="nextImage()">❯</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
